@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JAVA SCRIPT DAY1 </title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <h1>JavaScript Question Day 1</h1>
+    <h3>
+        Question 1. Difference between “ == “ and “ === “ operators.
+    </h3>
+    <h4>
+        Answer 1. a: The == operator performs a loose equality comparison that performs type coercion if necessary to
+        make the comparison possible. <br>
+        b: The === operator, on the other hand, performs a strict equality comparison that does not perform type
+        coercion and requires the operands to have the same type (as well as the same value)
+    </h4>
+    <p>
+        let a =10; <br>
+        let b=10; <br>
+        console.log(a==b); // true <br>
+        console.log(a===b); // false
+    </p>
+    <br>
+    <h3>
+        Question 2. What are the differences between var, let and const?
+    </h3>
+    <h4>
+        Answer In JavaScript, Var, Let, and Const are keywords used to declare variables. Each keyword has its own
+        behavior and scoping rules
+
+    </h4>
+    <h3>VAR:</h3>
+    <p>
+        1.Var is a keyword used to declare variables in JavaScript. <br>
+        2. Var is function-scoped, meaning that a variable declared with var inside a function is accessible throughout
+        that entire function. <br>
+        3. If Var is declared outside of any function, it becomes globally scoped <br>
+    </p>
+    <h3>LET:</h3>
+    <P>
+        1. Let is a keyword used to declare variables in JavaScript, just like Var. <br>
+        2.Let is block-scoped, meaning that a variable declared with let inside a block (e.g. a loop, an if statement,
+        or
+        a function) is only accessible within that block. <br>
+        3. If you declare a variable with Let twice in the same block, an error will be thrown. <br>
+    </P>
+    <h3>CONST:</h3>
+    <p>
+        1. ES6 introduced the const keyword, which is used to define a new variable in JavaScript. <br>
+        2. Generally, the var keyword is used to declare a JavaScript variable. <br>
+        3.Const is another keyword to declare a variable when you do not want to change the value of that variable for
+        the whole program. <br>
+        4. The difference is just that var is for normal variable declaration whose value can be changed, whereas a
+        variable value declared using const keyword cannot be changed. <br>
+    </p>
+    <br>
+    <h3>
+        Question 3.What is hoisting?
+    </h3>
+    <h4>
+        Answer. JavaScript Hoisting refers to the process whereby the interpreter appears to move the declaration of
+        functions, variables or classes to the top of their scope, prior to execution of the code.
+    </h4>
+    <br>
+    <h3>
+        Question 4. What is a Temporal Dead Zone?
+    </h3>
+    <h4>
+        Answer . A temporal dead zone (TDZ) is the area of a block where a variable is inaccessible until the moment the
+        computer completely initializes it with a value. <br>
+    </h4>
+    <p>
+        1.A block is a pair of braces ({...}) used to group multiple statements. <br>
+        2.Initialization occurs when you assign an initial value to a variable. <br>
+        3.Suppose you attempt to access a variable before its complete initialization. <br>
+        4.In such a case, JavaScript will throw a ReferenceError
+    </p>
+    <br>
+    <h3>
+        Question 5. What is execution context?
+    </h3>
+    <h4>
+        When the JavaScript engine scans a script file, it makes an environment called the Execution Context that
+        handles the entire transformation and execution of the code.
+        During the context runtime, the parser parses the source code and allocates memory for the variables and
+        functions. The source code is generated and gets executed.
+    </h4>
+    <p>
+        There are two types of execution contexts: global and function. <br>
+        a. The global execution context is created when a JavaScript script first starts to run, and it represents the
+        global scope in JavaScript. <br>
+        b . A function execution context is created whenever a function is called, representing the function's local
+        scope.
+    </p>
+    <br>
+    <h3>
+        Question 6.What is an event loop and call stack
+    </h3>
+    <h4>
+        Answer . In JavaScript, the event loop and call stack are two key concepts that determine how code is executed
+        in the
+        language.
+    </h4>
+    <p>
+        1. The call stack is a data structure that keeps track of the function calls in a program. <br>
+        2. Whenever a function is called, it is added to the top of the call stack, and when the function completes, it
+        is removed from the top of the stack. <br>
+        3. This allows JavaScript to keep track of where it is in a program's execution and which function to return to
+        after the current one finishes.
+        <br>
+    </p>
+    <h3>
+        Question 7. What is creation phase and execution phase?
+    </h3>
+    <h4>
+        Answer. The creation phase includes creating the global and function execution contexts, creating the scope
+        chain, and allocating memories for the variables and functions. During the execution phase, the JavaScript
+        engine executes the code line by line. This includes evaluating and executing statements
+    </h4>
+    <h3>
+        Question 8. What are callbacks?
+    </h3>
+    <h4>
+        Answer. A JavaScript callback is a function which is to be executed after another function has finished
+        execution. A more formal definition would be - Any function that is passed as an argument to another function so
+        that it
+        can be executed in that other function is called as a callback function.
+    </h4>
+    <h3>
+        Question 9. What is meant by first class functions
+    </h3>
+    <h4>
+        Answer. First-class functions are functions that are treated as variables. They can also be parsed into other
+        functions as arguments.
+        In JavaScript, functions are treated as values or just another type of object.
+    </h4>
+    <h3>
+        Question 10. What is the spread operator?
+    </h3>
+    <h4>
+        Answer. The JavaScript spread operator (...) allows us to quickly copy all or part of an existing array or
+        object into another array or object
+    </h4>
+    <h3>
+        Question 11. What are pure functions?
+    </h3>
+    <h4>
+        Answer. Pure functions are functions that don't produce side effects and, when called with the same input parameters, will always return the same output.
+    </h4>
+    <p>
+       1. You can use pure functions to ensure your code is clean, maintainable, and testable. <br>
+       2.  These functions are ideal for these tasks because they are predictable and do not modify external states
+    </p>
+
+    <script src="./script.js"></script>
+</body>
+
+</html>
